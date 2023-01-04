@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Yasir Talpur</title>
+</head>
+<body>
+  <h1 class="glow-on-hover">MY Profile</h1>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>F/Name</td>
+        <td>Roll No</td>
+        <td>Cast</td>
+        <td>City</td>
+       
+    </thead>
+    <tbody>
+      </tr>
+      <tr>
+        <td class="name">Yasir Gul</td>
+        <td>Gul Bahar</td>
+        <td>IT-E20-30</td>
+        <td>Talpur</td>
+        <td>Talpur wada</td>
+       
+      </tr>
+    </tbody>
+  </table>
+
+  <main>
+    <section class="faq-container">
+      <div class="faq-one">
+
+        <h1 class="faq-page">My Family Background</h1>
+        <div class="faq-body">
+          <p>My name is Yasir Gul Talpur and i belong to a village named "Talpur Wada". I have a sister and no brother. My mother is a Primary school teacher and my father runs the taxi service at our village.
+We manage to live an average middle class life and being able to fulfill our needs according to our range.
+          </p>
+        </div>
+      </div>
+      <!-- <hr class="hr-line"> -->
+      <div class="faq-two">
+
+        <h1 class="faq-page">Friend Circle</h1>
+        
+        <div class="faq-body">
+          <p>I have many friends, some in university, some randomly met, some social media friends but have a small but qualitative circle. However i will mention them here
+Hussain my university mate, straight forward and loving guy, who i annoy much but never get enough.
+Irfan
+Caring , sensitive, overthinking guy who always gives u company when there is no one else.
+Afzal
+I can not define him in words but i will try to, He is a guy never backing off whatever the situation is, u just can never underestimate him
+Akash
+My cousin but more like a friend, trusts everyone have the qualities of a true friend, never backs off whatever the situation is.
+Samiullah
+Knows nothing like ego that makes him special always helpful keeping things safe and a silent guy but with a warming heart
+Hakam
+Molvi Sahab, he is the heart of every meeting, when u have him with u u wont be able to stop laughing.. Very intelligent
+Azizullah
+Silent but with a neat & clean heart, guy made to assist no childish behaviour like us speaks only when needed</p>
+        </div>
+      </div>
+      <!-- <hr class="hr-line"> -->
+      <div class="faq-three">
+
+        <h1 class="faq-page">Qualification</h1>
+
+        <div class="faq-body">
+          <p>Passed my Primary from Global Public School Talpur Wada.
+Middle and Highs from Ahlul Bait Public High School Talpur Wada and passed secondary education in 2017.
+Studied college from Degree college Bozdar Wada and passed Intermediate in 2019.
+Currently admitted in Information Technology(IT) at Institute of Computer Science in Shah Abdul Latif University Khairpur Mir's, 6th semester about to end.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+  
+    var faq = document.getElementsByClassName("faq-page");
+    var i;
+    for (i = 0; i < faq.length; i++) {
+      faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+          body.style.display = "none";
+        } else {
+          body.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
